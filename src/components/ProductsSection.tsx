@@ -1,3 +1,4 @@
+
 import ProductCard from './ProductCard';
 
 const ProductsSection = () => {
@@ -27,31 +28,36 @@ const ProductsSection = () => {
       title: 'Brita 1',
       description: 'A construção civil é um ramo que exige o uso de diversos materiais para garantir a segurança da edificação. Nossa brita 1 oferece a granulometria ideal para diversas aplicações.',
       imageUrl: '/lovable-uploads/Nobre-Minerais-Venda-de-Brita-1-01.png',
-      applications: 'Concreto Armado, Lajes, Pilares'
+      applications: 'Concreto Armado, Lajes, Pilares',
+      slug: '/brita-1'
     },
     {
       title: 'Brita 0',
       description: 'O uso de agregados graúdos e miúdos faz toda a diferença em uma obra, pois são eles que integram a composição do concreto e garantem sua resistência.',
       imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Brita-0-01.png',
-      applications: 'Concreto Fino, Regularização, Acabamentos'
+      applications: 'Concreto Fino, Regularização, Acabamentos',
+      slug: '/brita-0'
     },
     {
       title: 'Pó de Pedra',
       description: 'O pó de pedra é um agregado muito importante nas construções porque, além de ser resistente, oferece aderência e facilita o nivelamento de superfícies.',
       imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Po-de-Pedra01.png',
-      applications: 'Nivelamento, Calçamento, Base'
+      applications: 'Nivelamento, Calçamento, Base',
+      slug: '/po-de-pedra'
     },
     {
       title: 'Bica Corrida',
       description: 'Conhecida por ser um conjunto de pedra britada, pedrisco e pó-de-pedra que proporciona excelente compactação e estabilidade para bases e pavimentação.',
       imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Bica-Corrida01.png',
-      applications: 'Pavimentação, Base de Calçadas, Aterros'
+      applications: 'Pavimentação, Base de Calçadas, Aterros',
+      slug: '/bica-corrida'
     },
     {
       title: 'Saibro',
       description: 'Muitos são os materiais utilizados na construção de casas, prédios e demais estabelecimentos. O saibro é essencial para aterros e nivelamento de terrenos.',
       imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Saibro01.png',
-      applications: 'Aterros, Nivelamento, Jardins'
+      applications: 'Aterros, Nivelamento, Jardins',
+      slug: '/saibro'
     }
   ];
 
