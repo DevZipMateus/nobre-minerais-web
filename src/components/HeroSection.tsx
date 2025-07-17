@@ -1,5 +1,6 @@
 
 import { Button } from './ui/button';
+import { ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToProducts = () => {
@@ -9,27 +10,53 @@ const HeroSection = () => {
     }
   };
 
+  const scrollToAbout = () => {
+    const element = document.getElementById('about');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section 
       id="hero"
-      className="min-h-screen flex items-center justify-center relative bg-cover bg-center"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=7372&auto=format&fit=crop')`
-      }}
+      className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
     >
-      <div className="text-center text-white px-4 animate-fade-in">
-        <h1 className="font-serif text-5xl md:text-7xl font-bold text-secondary mb-6">
-          NOBRE MINERAIS
+      {/* Background Pattern */}
+      <div className="absolute inset-0 bg-black/20"></div>
+      
+      <div className="relative text-center text-white px-4 max-w-4xl mx-auto animate-slide-in">
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+          QUALIDADE E INOVAÇÃO EM
+          <span className="block text-secondary mt-2">MINERAÇÃO</span>
         </h1>
-        <h2 className="font-sans text-lg md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
-          Conectando a terra às suas mãos, com a pureza e a nobreza que só a natureza oferece.
-        </h2>
-        <Button 
-          onClick={scrollToProducts}
-          className="bg-secondary text-black hover:bg-secondary/90 font-sans text-lg px-8 py-6 rounded-lg transition-all duration-300 hover:scale-105"
-        >
-          Conheça Nossos Produtos
-        </Button>
+        
+        <p className="font-sans text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-200">
+          Conectando a terra às suas mãos, com a pureza e a nobreza que só a natureza oferece. 
+          Comprometidos com a excelência e sustentabilidade em cada processo.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button 
+            onClick={scrollToProducts}
+            className="bg-secondary text-black hover:bg-secondary/90 font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 hover:scale-105 uppercase tracking-wide"
+          >
+            Nossos Produtos
+          </Button>
+          
+          <Button 
+            onClick={scrollToAbout}
+            variant="outline"
+            className="border-white text-white hover:bg-white hover:text-primary font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 uppercase tracking-wide"
+          >
+            Saiba Mais
+          </Button>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <ChevronDown className="w-8 h-8 text-white" />
       </div>
     </section>
   );

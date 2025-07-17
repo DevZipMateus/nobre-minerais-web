@@ -10,81 +10,82 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 20%;
+    --foreground: 0 0% 3.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 20%;
+    --card-foreground: 0 0% 3.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 20%;
+    --popover-foreground: 0 0% 3.9%;
 
-    --primary: 180 100% 12.5%; /* #004040 - Verde Escuro */
-    --primary-foreground: 0 0% 100%;
+    --primary: 210 100% 20%; /* #003366 - Azul escuro similar ao site */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 43 87% 51%; /* #DAA520 - Dourado */
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 45 93% 47%; /* #E6B800 - Dourado/amarelo */
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 0 0% 95.7%;
-    --muted-foreground: 0 0% 45.1%;
+    --muted: 210 40% 98%;
+    --muted-foreground: 215 13.8% 44.1%;
 
-    --accent: 43 87% 51%; /* #DAA520 - Dourado */
-    --accent-foreground: 0 0% 0%;
+    --accent: 45 93% 47%;
+    --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 180 100% 12.5%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 210 100% 20%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 0 0% 20%;
-    --sidebar-primary: 180 100% 12.5%;
+    --sidebar-foreground: 0 0% 3.9%;
+    --sidebar-primary: 210 100% 20%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 0% 95.9%;
-    --sidebar-accent-foreground: 180 100% 12.5%;
-    --sidebar-border: 0 0% 91%;
-    --sidebar-ring: 43 87% 51%;
+    --sidebar-accent: 210 40% 98%;
+    --sidebar-accent-foreground: 210 100% 20%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 45 93% 47%;
   }
 
   .dark {
-    --background: 0 0% 20%;
-    --foreground: 0 0% 98%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 20%;
-    --card-foreground: 0 0% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 20%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 180 100% 12.5%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 43 87% 51%;
-    --secondary-foreground: 0 0% 0%;
+    --secondary: 45 93% 47%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 43 87% 51%;
-    --accent-foreground: 0 0% 0%;
+    --accent: 45 93% 47%;
+    --accent-foreground: 0 0% 9%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 43 87% 51%;
-    --sidebar-background: 0 0% 20%;
-    --sidebar-foreground: 0 0% 95.9%;
-    --sidebar-primary: 43 87% 51%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 45 93% 47%;
+
+    --sidebar-background: 222.2 84% 4.9%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 45 93% 47%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 15.9%;
-    --sidebar-accent-foreground: 0 0% 95.9%;
-    --sidebar-border: 0 0% 15.9%;
-    --sidebar-ring: 43 87% 51%;
+    --sidebar-accent: 217.2 32.6% 17.5%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217.2 32.6% 17.5%;
+    --sidebar-ring: 45 93% 47%;
   }
 }
 
@@ -99,13 +100,29 @@ All colors MUST be HSL.
 }
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap');
 
 /* Custom font classes */
 .font-serif {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .font-sans {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Custom animations */
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInFromTop 0.8s ease-out;
 }
