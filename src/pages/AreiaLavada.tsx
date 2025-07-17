@@ -1,3 +1,4 @@
+
 import { ArrowLeft, CheckCircle, Truck, Shield, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -26,7 +27,7 @@ const AreiaLavada = () => {
               <img
                 src="/lovable-uploads/6e3eab13-64da-433a-8092-b8718a242299.png"
                 alt="Areia Lavada - Nobre Minerais"
-                className="w-full h-auto rounded-lg shadow-2xl"
+                className="w-4/5 h-auto rounded-lg shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-lg"></div>
             </div>
@@ -62,20 +63,29 @@ const AreiaLavada = () => {
       {/* Description Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8 text-center">
-              Sobre Nosso Produto
-            </h2>
-            <div className="prose prose-lg max-w-none">
-              <p className="font-sans text-gray-600 leading-relaxed mb-6">
-                Fazer a edificação de estabelecimentos não é um processo simples e exige o suporte de profissionais qualificados para o cumprimento efetivo de todas as etapas. Um cuidado muito importante está relacionado com a seleção de agregados graúdos e miúdos que são essenciais na construção.
-              </p>
-              <p className="font-sans text-gray-600 leading-relaxed mb-6">
-                Por conta disso, é muito importante buscar assistência de qualidade na Venda de Areia Lavada.
-              </p>
-              <p className="font-sans text-gray-600 leading-relaxed">
-                A Nobre Comércio e Serviços de Minerais é uma empresa com ampla experiência no mercado de produtos para a construção civil e busca sempre fazer o melhor pelos seus clientes. Desse modo, saiba que pode contar conosco quando precisar de Venda de Areia Lavada, pois estamos à disposição para promover o melhor suporte e fazer com que você tenha um produto de alto nível.
-              </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+            <div>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+                Sobre Nosso Produto
+              </h2>
+              <div className="prose prose-lg max-w-none">
+                <p className="font-sans text-gray-600 leading-relaxed mb-6">
+                  Fazer a edificação de estabelecimentos não é um processo simples e exige o suporte de profissionais qualificados para o cumprimento efetivo de todas as etapas. Um cuidado muito importante está relacionado com a seleção de agregados graúdos e miúdos que são essenciais na construção.
+                </p>
+                <p className="font-sans text-gray-600 leading-relaxed mb-6">
+                  Por conta disso, é muito importante buscar assistência de qualidade na Venda de Areia Lavada.
+                </p>
+                <p className="font-sans text-gray-600 leading-relaxed">
+                  A Nobre Comércio e Serviços de Minerais é uma empresa com ampla experiência no mercado de produtos para a construção civil e busca sempre fazer o melhor pelos seus clientes. Desse modo, saiba que pode contar conosco quando precisar de Venda de Areia Lavada, pois estamos à disposição para promover o melhor suporte e fazer com que você tenha um produto de alto nível.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <img
+                src="/lovable-uploads/6e3eab13-64da-433a-8092-b8718a242299.png"
+                alt="Areia Lavada - Nobre Minerais"
+                className="w-3/4 h-auto rounded-lg shadow-lg"
+              />
             </div>
           </div>
         </div>
