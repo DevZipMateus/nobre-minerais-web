@@ -28,8 +28,12 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-xl font-serif font-bold text-white">
-          NOBRE MINERAIS
+        <div className="flex items-center">
+          <img 
+            src="/lovable-uploads/dfc9911f-634b-4ec5-b915-aa5bf11d94fe.png" 
+            alt="Nobre Minerais Logo" 
+            className="h-12 w-auto"
+          />
         </div>
         
         <nav className="hidden md:flex space-x-8">

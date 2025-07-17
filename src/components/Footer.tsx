@@ -1,4 +1,3 @@
-
 import { Linkedin, Instagram } from 'lucide-react';
 
 const Footer = () => {
@@ -13,8 +12,12 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white py-12">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <div className="font-serif text-2xl font-bold mb-6">
-            NOBRE MINERAIS
+          <div className="flex justify-center mb-6">
+            <img 
+              src="/lovable-uploads/dfc9911f-634b-4ec5-b915-aa5bf11d94fe.png" 
+              alt="Nobre Minerais Logo" 
+              className="h-16 w-auto"
+            />
           </div>
           
           <nav className="flex justify-center space-x-8 mb-8">
