@@ -20,37 +20,63 @@ const HeroSection = () => {
   return (
     <section 
       id="hero"
-      className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800"
+      className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-secondary via-secondary/90 to-secondary/80"
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 bg-black/20"></div>
+      <div className="absolute inset-0 bg-black/10"></div>
       
-      <div className="relative text-center text-white px-4 max-w-4xl mx-auto animate-slide-in">
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-          QUALIDADE E INOVAÇÃO EM
-          <span className="block text-secondary mt-2">MINERAÇÃO</span>
-        </h1>
-        
-        <p className="font-sans text-lg md:text-xl mb-8 max-w-3xl mx-auto leading-relaxed text-gray-200">
-          Conectando a terra às suas mãos, com a pureza e a nobreza que só a natureza oferece. 
-          Comprometidos com a excelência e sustentabilidade em cada processo.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            onClick={scrollToProducts}
-            className="bg-secondary text-black hover:bg-secondary/90 font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 hover:scale-105 uppercase tracking-wide"
-          >
-            Nossos Produtos
-          </Button>
+      <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+        {/* Left Content */}
+        <div className="text-left text-white animate-slide-in">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            VENDA DE
+            <span className="block text-primary mt-2">SAIBRO NO</span>
+            <span className="block text-primary">RIO DE JANEIRO</span>
+          </h1>
           
-          <Button 
-            onClick={scrollToAbout}
-            variant="outline"
-            className="border-white text-white hover:bg-white hover:text-primary font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 uppercase tracking-wide"
-          >
-            Saiba Mais
-          </Button>
+          <p className="font-sans text-lg md:text-xl mb-8 max-w-2xl leading-relaxed text-white/90">
+            Conectando a terra às suas mãos, com a pureza e a nobreza que só a natureza oferece. 
+            Comprometidos com a excelência e sustentabilidade em cada processo.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button 
+              onClick={scrollToProducts}
+              className="bg-primary text-white hover:bg-primary/90 font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 hover:scale-105 uppercase tracking-wide"
+            >
+              Saiba mais
+            </Button>
+            
+            <Button 
+              onClick={scrollToAbout}
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-secondary font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 uppercase tracking-wide"
+            >
+              Nossos Produtos
+            </Button>
+          </div>
+        </div>
+
+        {/* Right Content - Hexagonal Image */}
+        <div className="flex justify-center lg:justify-end">
+          <div className="relative">
+            {/* Hexagonal container */}
+            <div 
+              className="w-80 h-80 md:w-96 md:h-96 bg-white/10 backdrop-blur-sm border-4 border-white/30 flex items-center justify-center"
+              style={{
+                clipPath: 'polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)'
+              }}
+            >
+              <img 
+                src="/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Saibro01.png"
+                alt="Saibro - Material de construção"
+                className="w-72 h-72 md:w-80 md:h-80 object-cover"
+                style={{
+                  clipPath: 'polygon(30% 0%, 70% 0%, 100% 50%, 70% 100%, 30% 100%, 0% 50%)'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </div>
 
