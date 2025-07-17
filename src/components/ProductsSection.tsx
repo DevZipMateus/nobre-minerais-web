@@ -13,7 +13,8 @@ const ProductsSection = () => {
       title: 'Brita Ensacada',
       description: 'O uso de agregados graúdos e miúdos na área de construção civil é indispensável, afinal eles são responsáveis por garantir resistência e durabilidade às estruturas.',
       imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Brita-Ensacada01.webp',
-      applications: 'Concreto, Fundações, Estruturas'
+      applications: 'Concreto, Fundações, Estruturas',
+      slug: '/brita-ensacada'
     },
     {
       title: 'Areia Lavada',
