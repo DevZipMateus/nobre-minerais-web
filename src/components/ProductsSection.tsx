@@ -1,4 +1,3 @@
-
 import ProductCard from './ProductCard';
 
 const ProductsSection = () => {
@@ -7,7 +6,8 @@ const ProductsSection = () => {
       title: 'Areia Ensacada',
       description: 'Obter insumos para a construção civil é uma etapa muito importante para a reforma ou construção de qualquer estabelecimento. Nossa areia ensacada oferece praticidade e qualidade.',
       imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Areia-Ensacada-01.png',
-      applications: 'Construção Civil, Reformas, Acabamentos'
+      applications: 'Construção Civil, Reformas, Acabamentos',
+      slug: '/areia-ensacada'
     },
     {
       title: 'Brita Ensacada',
