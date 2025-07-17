@@ -6,49 +6,49 @@ const ProductsSection = () => {
     {
       title: 'Areia Ensacada',
       description: 'Obter insumos para a construção civil é uma etapa muito importante para a reforma ou construção de qualquer estabelecimento. Nossa areia ensacada oferece praticidade e qualidade.',
-      imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=3276&auto=format&fit=crop',
+      imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Areia-Ensacada-01.png',
       applications: 'Construção Civil, Reformas, Acabamentos'
     },
     {
       title: 'Brita Ensacada',
       description: 'O uso de agregados graúdos e miúdos na área de construção civil é indispensável, afinal eles são responsáveis por garantir resistência e durabilidade às estruturas.',
-      imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=3270&auto=format&fit=crop',
+      imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Brita-Ensacada01.webp',
       applications: 'Concreto, Fundações, Estruturas'
     },
     {
       title: 'Areia Lavada',
       description: 'Fazer a edificação de estabelecimentos não é um processo simples e exige o suporte de profissionais qualificados e materiais de primeira qualidade como nossa areia lavada.',
-      imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=3270&auto=format&fit=crop',
+      imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Areia-Lavada01.png',
       applications: 'Argamassa, Reboco, Assentamento'
     },
     {
       title: 'Brita 1',
       description: 'A construção civil é um ramo que exige o uso de diversos materiais para garantir a segurança da edificação. Nossa brita 1 oferece a granulometria ideal para diversas aplicações.',
-      imageUrl: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=3270&auto=format&fit=crop',
+      imageUrl: '/lovable-uploads/Nobre-Minerais-Venda-de-Brita-1-01.png',
       applications: 'Concreto Armado, Lajes, Pilares'
     },
     {
       title: 'Brita 0',
       description: 'O uso de agregados graúdos e miúdos faz toda a diferença em uma obra, pois são eles que integram a composição do concreto e garantem sua resistência.',
-      imageUrl: 'https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=3270&auto=format&fit=crop',
+      imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Brita-0-01.png',
       applications: 'Concreto Fino, Regularização, Acabamentos'
     },
     {
       title: 'Pó de Pedra',
       description: 'O pó de pedra é um agregado muito importante nas construções porque, além de ser resistente, oferece aderência e facilita o nivelamento de superfícies.',
-      imageUrl: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=3325&auto=format&fit=crop',
+      imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Po-de-Pedra01.png',
       applications: 'Nivelamento, Calçamento, Base'
     },
     {
       title: 'Bica Corrida',
       description: 'Conhecida por ser um conjunto de pedra britada, pedrisco e pó-de-pedra que proporciona excelente compactação e estabilidade para bases e pavimentação.',
-      imageUrl: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=3270&auto=format&fit=crop',
+      imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Bica-Corrida01.png',
       applications: 'Pavimentação, Base de Calçadas, Aterros'
     },
     {
       title: 'Saibro',
       description: 'Muitos são os materiais utilizados na construção de casas, prédios e demais estabelecimentos. O saibro é essencial para aterros e nivelamento de terrenos.',
-      imageUrl: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=3270&auto=format&fit=crop',
+      imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Saibro01.png',
       applications: 'Aterros, Nivelamento, Jardins'
     }
   ];
