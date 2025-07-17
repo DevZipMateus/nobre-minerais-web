@@ -56,7 +56,7 @@ const HeroSection = () => {
             <Button 
               onClick={scrollToAbout}
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-primary font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 uppercase tracking-wide"
+              className="border-white text-white hover:bg-white hover:text-secondary font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 uppercase tracking-wide"
             >
               Nossos Produtos
             </Button>
