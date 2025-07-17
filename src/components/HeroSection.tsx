@@ -20,18 +20,24 @@ const HeroSection = () => {
   return (
     <section 
       id="hero"
-      className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-secondary via-secondary/90 to-secondary/80"
+      className="min-h-screen flex items-center justify-center relative"
+      style={{
+        backgroundImage: 'url(/lovable-uploads/dacf19f1-5707-467d-bb34-7394754b1fda.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-black/10"></div>
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/60"></div>
       
       <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         {/* Left Content */}
         <div className="text-left text-white animate-slide-in">
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             VENDA DE
-            <span className="block text-primary mt-2">SAIBRO NO</span>
-            <span className="block text-primary">RIO DE JANEIRO</span>
+            <span className="block text-secondary mt-2">SAIBRO NO</span>
+            <span className="block text-secondary">RIO DE JANEIRO</span>
           </h1>
           
           <p className="font-sans text-lg md:text-xl mb-8 max-w-2xl leading-relaxed text-white/90">
@@ -42,7 +48,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button 
               onClick={scrollToProducts}
-              className="bg-primary text-white hover:bg-primary/90 font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 hover:scale-105 uppercase tracking-wide"
+              className="bg-secondary text-white hover:bg-secondary/90 font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 hover:scale-105 uppercase tracking-wide"
             >
               Saiba mais
             </Button>
@@ -50,7 +56,7 @@ const HeroSection = () => {
             <Button 
               onClick={scrollToAbout}
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-secondary font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 uppercase tracking-wide"
+              className="border-white text-white hover:bg-white hover:text-primary font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 uppercase tracking-wide"
             >
               Nossos Produtos
             </Button>
