@@ -1,4 +1,3 @@
-
 import { ArrowLeft, CheckCircle, Truck, Shield, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -18,12 +17,21 @@ const AreiaLavada = () => {
       {/* Hero Section */}
       <section className="py-12 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="relative">
               <h1 className="font-serif text-4xl md:text-6xl font-bold text-primary mb-6 uppercase tracking-wide">
                 Areia Lavada
               </h1>
               <div className="w-24 h-1 bg-secondary mb-8"></div>
+              <img
+                src="/lovable-uploads/6e3eab13-64da-433a-8092-b8718a242299.png"
+                alt="Areia Lavada - Nobre Minerais"
+                className="w-full h-auto rounded-lg shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-lg"></div>
+            </div>
+            
+            <div>
               <p className="font-sans text-xl text-gray-600 mb-8 leading-relaxed">
                 A seleção de materiais para uma construção civil deve contemplar empresas de alto nível para a Venda de Areia Lavada
               </p>
@@ -46,15 +54,6 @@ const AreiaLavada = () => {
               >
                 <span>Solicitar Orçamento</span>
               </Link>
-            </div>
-            
-            <div className="relative">
-              <img
-                src="/lovable-uploads/6e3eab13-64da-433a-8092-b8718a242299.png"
-                alt="Areia Lavada - Nobre Minerais"
-                className="w-full h-auto rounded-lg shadow-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-lg"></div>
             </div>
           </div>
         </div>
