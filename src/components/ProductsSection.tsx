@@ -19,7 +19,8 @@ const ProductsSection = () => {
       title: 'Areia Lavada',
       description: 'Fazer a edificação de estabelecimentos não é um processo simples e exige o suporte de profissionais qualificados e materiais de primeira qualidade como nossa areia lavada.',
       imageUrl: '/lovable-uploads/nobre/Nobre-Minerais-Venda-de-Areia-Lavada01.png',
-      applications: 'Argamassa, Reboco, Assentamento'
+      applications: 'Argamassa, Reboco, Assentamento',
+      slug: '/areia-lavada'
     },
     {
       title: 'Brita 1',
@@ -75,6 +76,7 @@ const ProductsSection = () => {
               description={product.description}
               imageUrl={product.imageUrl}
               applications={product.applications}
+              slug={product.slug}
             />
           ))}
         </div>

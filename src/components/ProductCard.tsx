@@ -1,13 +1,16 @@
 
+import { Link } from 'react-router-dom';
+
 interface ProductCardProps {
   title: string;
   description: string;
   imageUrl: string;
   applications?: string;
+  slug?: string;
 }
 
-const ProductCard = ({ title, description, imageUrl, applications }: ProductCardProps) => {
-  return (
+const ProductCard = ({ title, description, imageUrl, applications, slug }: ProductCardProps) => {
+  const CardContent = (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group h-full flex flex-col">
       <div className="relative overflow-hidden h-48">
         <img
@@ -40,6 +43,16 @@ const ProductCard = ({ title, description, imageUrl, applications }: ProductCard
       </div>
     </div>
   );
+
+  if (slug) {
+    return (
+      <Link to={slug} className="block">
+        {CardContent}
+      </Link>
+    );
+  }
+
+  return CardContent;
 };
 
 export default ProductCard;
