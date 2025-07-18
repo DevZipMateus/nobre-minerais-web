@@ -62,14 +62,27 @@ const ProductsSection = () => {
   ];
 
   return (
-    <section id="products" className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4">
+    <section id="products" className="py-20 relative overflow-hidden">
+      {/* Dynamic Orange Diagonal Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/90 to-orange-600">
+        {/* Diagonal geometric shape */}
+        <div className="absolute top-0 right-0 w-full h-full">
+          <div className="absolute top-0 right-0 w-3/4 h-full bg-gradient-to-bl from-secondary/80 to-transparent transform skew-x-12 origin-top-right"></div>
+        </div>
+        {/* Additional geometric elements */}
+        <div className="absolute bottom-0 left-0 w-2/3 h-2/3 bg-gradient-to-tr from-orange-500/20 to-transparent transform -skew-x-12"></div>
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-48 h-48 bg-white/5 rounded-full blur-2xl"></div>
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6 uppercase tracking-wide">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-white mb-6 uppercase tracking-wide drop-shadow-lg">
             Nossos Produtos
           </h2>
-          <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
-          <p className="font-sans text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-24 h-1 bg-white mx-auto mb-8"></div>
+          <p className="font-sans text-lg text-white/90 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
             Oferecemos uma ampla gama de materiais para construção civil de alta qualidade, 
             processados com tecnologia de ponta para atender às demandas mais exigentes do mercado.
           </p>
@@ -77,17 +90,21 @@ const ProductsSection = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {products.map((product, index) => (
-            <ProductCard
-              key={index}
-              title={product.title}
-              description={product.description}
-              imageUrl={product.imageUrl}
-              applications={product.applications}
-              slug={product.slug}
-            />
+            <div key={index} className="transform hover:scale-105 transition-all duration-300">
+              <ProductCard
+                title={product.title}
+                description={product.description}
+                imageUrl={product.imageUrl}
+                applications={product.applications}
+                slug={product.slug}
+              />
+            </div>
           ))}
         </div>
       </div>
+
+      {/* Bottom fade effect */}
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
     </section>
   );
 };
