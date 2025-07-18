@@ -1,5 +1,7 @@
+
 import { Button } from './ui/button';
 import { ChevronDown } from 'lucide-react';
+
 const HeroSection = () => {
   const scrollToProducts = () => {
     const element = document.getElementById('products');
@@ -9,6 +11,7 @@ const HeroSection = () => {
       });
     }
   };
+
   const scrollToAbout = () => {
     const element = document.getElementById('about');
     if (element) {
@@ -17,12 +20,14 @@ const HeroSection = () => {
       });
     }
   };
-  return <section id="hero" className="min-h-screen flex items-center justify-center relative" style={{
-    backgroundImage: 'url(/lovable-uploads/dacf19f1-5707-467d-bb34-7394754b1fda.png)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat'
-  }}>
+
+  return (
+    <section id="hero" className="min-h-screen flex items-center justify-center relative" style={{
+      backgroundImage: 'url(/lovable-uploads/dacf19f1-5707-467d-bb34-7394754b1fda.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/60"></div>
       
@@ -45,7 +50,7 @@ const HeroSection = () => {
               Saiba mais
             </Button>
             
-            <Button onClick={scrollToAbout} variant="outline" className="border-white text-white hover:bg-white hover:text-secondary font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 uppercase tracking-wide">
+            <Button onClick={scrollToAbout} variant="outline" className="border-white text-white hover:bg-secondary hover:text-white hover:border-secondary font-sans text-base font-semibold px-8 py-4 rounded-sm transition-all duration-300 uppercase tracking-wide">
               Nossos Produtos
             </Button>
           </div>
@@ -61,6 +66,8 @@ const HeroSection = () => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ChevronDown className="w-8 h-8 text-white" />
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;
