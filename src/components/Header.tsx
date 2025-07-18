@@ -47,6 +47,7 @@ const Header = () => {
     { name: 'Venda de Brita Ensacada', path: '/brita-ensacada' },
     { name: 'Venda de Pó de Pedra', path: '/po-de-pedra' },
     { name: 'Venda de Saibro', path: '/saibro' },
+    { name: 'Venda de Grama RJ', path: '/grama-rj' },
   ];
 
   return (
