@@ -15,8 +15,33 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Handle form submission here
+    
+    // Criar mensagem formatada para WhatsApp
+    const whatsappMessage = `*Nova mensagem do site:*
+    
+*Nome:* ${formData.name}
+*Email:* ${formData.email}
+*Telefone:* ${formData.phone}
+*Mensagem:* ${formData.message}`;
+    
+    // Codificar a mensagem para URL
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    
+    // Criar URL do WhatsApp
+    const whatsappUrl = `https://api.whatsapp.com/send/?phone=5521965691913&text=${encodedMessage}&type=phone_number&app_absent=0`;
+    
+    // Abrir WhatsApp
+    window.open(whatsappUrl, '_blank');
+    
+    // Limpar formulário
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
+    
+    console.log('Form submitted via WhatsApp:', formData);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -56,7 +81,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-sans font-semibold mb-2">Telefone</h4>
-                  <p className="font-sans text-gray-200">(XX) XXXX-XXXX</p>
+                  <p className="font-sans text-gray-200">(21) 96569-1913</p>
                 </div>
               </div>
               
@@ -132,7 +157,7 @@ const ContactSection = () => {
                 className="w-full bg-secondary text-black hover:bg-secondary/90 font-sans text-lg py-6 font-semibold uppercase tracking-wide flex items-center justify-center gap-2"
               >
                 <Send className="w-5 h-5" />
-                Enviar Mensagem
+                Enviar via WhatsApp
               </Button>
             </form>
           </div>
