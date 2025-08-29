@@ -61,9 +61,21 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right Content - Hexagonal Image */}
+        {/* Right Content - Video */}
         <div className="flex justify-center lg:justify-end">
-          
+          <div className="relative w-full max-w-md lg:max-w-lg">
+            <video 
+              className="w-full h-auto rounded-lg shadow-2xl"
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              style={{ aspectRatio: '16/9' }}
+            >
+              <source src="/lovable-uploads/nobre/areia.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </div>
         </div>
       </div>
 
