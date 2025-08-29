@@ -1,4 +1,3 @@
-
 import { Button } from './ui/button';
 import { ChevronDown } from 'lucide-react';
 
@@ -63,7 +62,7 @@ const HeroSection = () => {
 
         {/* Right Content - Video */}
         <div className="flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-md lg:max-w-lg">
+          <div className="relative w-full max-w-lg lg:max-w-xl">
             <video 
               className="w-full h-auto rounded-lg shadow-2xl"
               autoPlay 
