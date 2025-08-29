@@ -31,7 +31,7 @@ const HeroSection = () => {
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/60"></div>
       
-      <div className="w-full max-w-none px-6 lg:px-12 grid lg:grid-cols-[1fr,1.5fr] gap-12 items-center relative z-10">
+      <div className="w-full max-w-none px-6 lg:px-12 grid lg:grid-cols-[1fr,2fr] gap-12 items-center relative z-10">
         {/* Left Content - Text */}
         <div className="text-left text-white animate-slide-in">
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -63,7 +63,7 @@ const HeroSection = () => {
 
         {/* Right Content - Video */}
         <div className="flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-2xl">
+          <div className="relative w-full max-w-4xl">
             <video 
               className="w-full h-auto rounded-lg shadow-2xl"
               autoPlay 
