@@ -31,7 +31,7 @@ const HeroSection = () => {
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/60"></div>
       
-      <div className="w-full max-w-none px-6 lg:px-12 grid lg:grid-cols-[1fr,2fr] gap-12 items-center relative z-10">
+      <div className="w-full max-w-none px-6 lg:px-12 grid lg:grid-cols-[1fr,2.5fr] gap-12 items-center relative z-10">
         {/* Left Content */}
         <div className="text-left text-white animate-slide-in">
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
