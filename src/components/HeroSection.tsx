@@ -63,7 +63,7 @@ const HeroSection = () => {
 
         {/* Right Content - Video */}
         <div className="flex justify-center lg:justify-end">
-          <div className="relative w-full max-w-xl lg:max-w-2xl">
+          <div className="relative w-full max-w-2xl lg:max-w-4xl">
             <video 
               className="w-full h-auto rounded-lg shadow-2xl"
               autoPlay 
